@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+spec:
+  #redirects agent to build on specific node
+  nodeSelector:
+    #label used by node -> defined when node was created
+    workload: build
+  containers:
+    #names will be refered in Jenkinsfile to select container
+  - name: shell
+    image: ubuntu
+    command:
+      #used to keep the containers persistent for the duration of the build
+    - sleep
+    args:
+      #defines the time of persistence for containers
+    - infinity
+  - name: maven
+    image: maven:3.6.3-jdk-8
+    command:
+    - sleep
+    args:
+    - infinity
