@@ -1,2 +1,2 @@
-KEY_VALUE_STR="string env variable"
-KEY_VALUE_INT=1234
+env.KEY_VALUE_STR="string env variable"
+env.KEY_VALUE_INT=1234
