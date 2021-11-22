@@ -1,0 +1,2 @@
+KEY_VALUE_STR="string env variable"
+KEY_VALUE_INT=1234
